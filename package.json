@@ -1,0 +1,37 @@
+{
+  "name": "stringified-normalize",
+  "version": "8.0.0",
+  "description": "Stringified normalize.css for CSS-in-JS libraries",
+  "author": "Gabriel Toll Stålbom <gabtost@gmail.com>",
+  "main": "index.js",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gabbes/stringified-normalize.git"
+  },
+  "homepage": "https://github.com/gabbes/stringified-normalize#readme",
+  "bugs": {
+    "url": "https://github.com/gabbes/stringified-normalize/issues"
+  },
+  "keywords": [
+    "normalize",
+    "normalize.css",
+    "stringified",
+    "styled",
+    "components",
+    "emotion",
+    "styles",
+    "react",
+    "css",
+    "jss"
+  ],
+  "scripts": {
+    "clean": "rimraf ./node_modules/normalize.css",
+    "fetch": "npm run clean && npm i --no-save normalize.css",
+    "start": "npm run fetch && node parse.js"
+  },
+  "devDependencies": {
+    "compare-versions": "^3.3.0",
+    "rimraf": "^2.6.2"
+  }
+}
